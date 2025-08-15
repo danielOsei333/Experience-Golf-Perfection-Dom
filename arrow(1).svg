@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 96 104" id="Arrow">
+  <path fill="#c7ea63" d="M80 48V16L48 0 16 16v16L0 40l32 64 32-16 32-32z" class="color3399cc svgShape"></path>
+  <path d="m32 104 32-32-16-8V32L16 16v32L0 40z" opacity=".11" fill="#000000" class="color000000 svgShape"></path>
+  <path d="m48 64 32-16V16L48 32zM32 104l32-16 32-32-32 16z" opacity=".29" fill="#000000" class="color000000 svgShape"></path>
+</svg>
