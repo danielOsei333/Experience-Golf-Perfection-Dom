@@ -64,7 +64,6 @@
             color: var(--almaris-light);
         }
         .hero {
-            background-image: url('https://i.imgur.com/8Q0a50R.jpg');
             background-size: cover;
             background-position: center;
         }
@@ -358,5 +357,6 @@
         .team-card .member-info {
             @apply absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent transition-opacity duration-300 group-hover:opacity-0;
         }
+
 
 
