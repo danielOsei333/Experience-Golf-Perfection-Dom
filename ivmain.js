@@ -42,29 +42,7 @@
         },
     });
     
-    const header = document.getElementById('header');
-    const heroSection = document.querySelector('.hero');
-    let lastScrollTop = 0;
-    window.addEventListener('scroll', function() {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        if (scrollTop > heroSection.offsetHeight) {
-            if (scrollTop > lastScrollTop) {
-                // Scrolling Up
-                header.classList.add('header-scrolled');
-                header.style.top = '0px';
-            } else {
-
-                                // Scrolling Down
-                header.classList.remove('header-scrolled');
-                header.style.top = '-200px'; 
-            }
-        } else {
-            header.classList.remove('header-scrolled');
-            header.style.top = '0px';
-            header.classList.remove('bg-gray-800', 'bg-opacity-50');
-        }
-        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-    }, false);
+   
 
 
 
@@ -130,6 +108,7 @@
             menuIcon.textContent = 'menu';
         }
     });
+
 
 
 
