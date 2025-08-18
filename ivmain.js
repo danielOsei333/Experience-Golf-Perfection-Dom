@@ -94,3 +94,43 @@
         });
 
 
+    let lastScrollTop = 0;
+    const header = document.getElementById('header');
+    const heroSection = document.querySelector('section');
+    window.addEventListener('scroll', function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            // Scroll down
+            if (scrollTop > heroSection.offsetHeight) {
+                header.classList.add('header-scrolled');
+                header.classList.remove('header-hidden');
+            } else {
+                 header.classList.add('header-hidden');
+            }
+        } else {
+            // Scroll up
+            if (scrollTop > heroSection.offsetHeight) {
+                header.classList.add('header-scrolled');
+                header.classList.remove('header-hidden');
+            } else {
+                header.classList.remove('header-hidden');
+                header.classList.remove('header-scrolled');
+            }
+        }
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    });
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = menuToggle.querySelector('.material-icons');
+    menuToggle.addEventListener('click', function() {
+        mobileMenu.classList.toggle('active');
+        if (mobileMenu.classList.contains('active')) {
+            menuIcon.textContent = 'close';
+        } else {
+            menuIcon.textContent = 'menu';
+        }
+    });
+
+
+
+
