@@ -349,4 +349,15 @@
          }
 
 
+		.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  right: var(--swiper-navigation-sides-offset,-16px);
+  left: auto;
+  border-bottom-right-radius: 15px !important;
+  border-bottom-left-radius: 0px !important;
+	padding: 7px;
+
+}
+
+
+
 
