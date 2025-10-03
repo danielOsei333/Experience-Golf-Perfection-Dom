@@ -8,5 +8,13 @@
             @apply absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/30 to-transparent transition-opacity duration-300 group-hover:opacity-0;
         }
 
+		.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  right: var(--swiper-navigation-sides-offset,-16px);
+  left: auto;
+  border-bottom-right-radius: 15px !important;
+  border-bottom-left-radius: 0px !important;
+	padding: 7px;
+
+}
 
         
